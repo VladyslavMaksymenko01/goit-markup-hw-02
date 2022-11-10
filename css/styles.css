@@ -1,0 +1,53 @@
+/*________TEXT COLORES________ */
+
+/* primary-color #757575 grey + contacts */
+/* secondary-color #212121 black */
+/* third-color #FFFFFF white + adress rgba 0.6*/
+/* accent-color #2196F3 blue */
+
+/* ________BACKGROUND COLORS________ */
+
+/* primary-bg-color #FFFFFF white */
+/* secondary-bg-color #2F303A darck grey*/
+/* third-bg-color #F5F4FA ash*/
+
+.body {
+  background-color: #ffffff;
+  color: #757575;
+}
+
+/* ________HEADER________ */
+
+.logo-accent {
+}
+.links {
+}
+.nav-links {
+  color: #212121;
+}
+
+.nav-links:active {
+  color: #2196f3;
+}
+.contacts {
+}
+.contacts-links {
+}
+
+/*________UTILITIES CLASSES________ */
+.list {
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
