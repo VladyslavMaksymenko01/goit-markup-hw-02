@@ -1,9 +1,9 @@
 /*________TEXT COLORES________ */
 
-/* primary-color #757575 grey + contacts */
-/* secondary-color #212121 black */
-/* third-color #FFFFFF white + adress rgba 0.6*/
-/* accent-color #2196F3 blue */
+/* primary-text-color #757575 grey + contacts */
+/* secondary-text-color #212121 black */
+/* third-text-color #FFFFFF white + adress rgba 0.6*/
+/* accent-text-color #2196F3 blue */
 
 /* ________BACKGROUND COLORS________ */
 
@@ -11,31 +11,259 @@
 /* secondary-bg-color #2F303A darck grey*/
 /* third-bg-color #F5F4FA ash*/
 
+/* ________START________ */
+
 .body {
-  background-color: #ffffff;
-  color: #757575;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--primary-bg-color);
+  color: var(--secondary-bg-color);
 }
 
-/* ________HEADER________ */
-
-.logo-accent {
-}
-.links {
-}
-.nav-links {
-  color: #212121;
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --third-text-color: #ffffff;
+  --accent-text-color: #2196f3;
 }
 
-.nav-links:active {
-  color: #2196f3;
+:root {
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #2f303a;
+  --third-bg-color: #f5f4fa;
 }
-.contacts {
-}
-.contacts-links {
-}
-
 /*________UTILITIES CLASSES________ */
 .list {
+  list-style: none;
+  text-decoration: none;
+}
+
+/* ________ШАПКА________*/
+
+.page-header {
+}
+
+/*________НАВІГАЦІЯ________*/
+
+.site-nav {
+}
+
+.logo {
+  text-decoration: none;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-text-color);
+}
+
+.logo .logo-accent:hover,
+.logo .logo-accent:focus {
+  color: var(--accent-text-color);
+}
+
+.logo-accent {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+.nav-links .links {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.nav-links .links:hover,
+.nav-links .links:focus a {
+  color: var(--accent-text-color);
+}
+.nav-links .link .current {
+  color: var(--accent-text-color);
+}
+
+/* ________КОНТАКТИ________*/
+.contacts .contact-links {
+  color: var(--primary-text-color);
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.contacts .contact-links:hover,
+.contacts .contact-links:focus {
+  color: var(--accent-text-color);
+}
+/* ________ГЕРОЙ________*/
+.hero {
+  background-color: var(--secondary-bg-color);
+}
+.hero-title {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--third-text-color);
+}
+.hero-btn {
+  background-color: var(--accent-text-color);
+  color: var(--third-text-color);
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  display: flex;
+  border-color: transparent;
+}
+/* ________ОСОБЛИВОСТІ________*/
+.section {
+}
+.visually-hidden {
+}
+.feature {
+}
+.features-titles {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+.features-text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+/* ________ЧИМ ЗАЙМАЄМОСЬ________*/
+.about-us {
+}
+.title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+/* ________НАША КОМАНДА________*/
+.team {
+}
+.team-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.team-subtext {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+}
+.work-position {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+/*________АДРЕСА________*/
+.footer {
+  background-color: var(--secondary-bg-color);
+}
+.footer-adr {
+  font-style: normal;
+}
+.footer-contacts {
+}
+.address {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--third-text-color);
+}
+.address:hover,
+.address:focus {
+  color: var(--accent-text-color);
+}
+.contact-links {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.contact-links:hover,
+.contact-links:focus {
+  color: var(--accent-text-color);
+}
+/*________ФІЛЬТР________*/
+.filtr {
+}
+.filtr-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  border: transparent;
+}
+.filtr-btn:hover,
+.filtr-btn:focus {
+  background-color: var(--accent-text-color);
+  color: var(--third-text-color);
+}
+/*________СПИСОК САЙТІВ ФІЛЬТР________*/
+.items {
+}
+.list-items {
+}
+
+.items-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+}
+.items-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
 
 .visually-hidden {
