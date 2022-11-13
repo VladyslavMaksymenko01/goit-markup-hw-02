@@ -103,7 +103,7 @@ body {
 }
 .hero-title {
   text-decoration: none;
-
+  font-family: inherit;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
