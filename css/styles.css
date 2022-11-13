@@ -9,6 +9,7 @@
 /* primary-bg-color #FFFFFF white */
 /* secondary-bg-color #2F303A darck grey*/
 /* third-bg-color #F5F4FA ash*/
+/* forth-bg-color #f5f5f5 */
 
 /* ________START________ */
 
@@ -22,12 +23,14 @@
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #2f303a;
   --third-bg-color: #f5f4fa;
+  --forth-bg-color: #f5f5f5;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--primary-bg-color);
   color: var(--secondary-bg-color);
+  font-size: 14px;
 }
 
 /*________UTILITIES CLASSES________ */
@@ -67,7 +70,6 @@ body {
 .nav-links .links {
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
@@ -85,9 +87,7 @@ body {
 
 .contacts .contact-links {
   color: var(--primary-text-color);
-  font-family: "Roboto";
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -102,8 +102,6 @@ body {
   background-color: var(--secondary-bg-color);
 }
 .hero-title {
-  text-decoration: none;
-  font-family: inherit;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -134,18 +132,14 @@ body {
 .visually-hidden {
 }
 .feature {
+  background-color: var(--forth-bg-color);
 }
 .features-titles {
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .features-text {
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
@@ -154,8 +148,8 @@ body {
 
 .about-us {
 }
-.title {
-  font-weight: 700;
+/* title */
+.section-title {
   font-size: 36px;
   line-height: 1.67;
   text-align: center;
@@ -167,21 +161,22 @@ body {
 .team {
   background-color: var(--third-bg-color);
 }
+
 .team-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.67;
   text-align: center;
   letter-spacing: 0.03em;
 }
-.team-subtext {
+
+.team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
 }
-.work-position {
-  font-weight: 400;
+
+.team-position {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -193,18 +188,22 @@ body {
 
 .footer {
   background-color: var(--secondary-bg-color);
+}
+.footer-logo {
+  text-decoration: none;
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-}
-.footer-logo {
   color: var(--third-text-color);
-  text-decoration: none;
 }
 .footer-logo-accent {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
   color: var(--accent-text-color);
 }
 .footer-adr {
@@ -214,8 +213,6 @@ body {
 }
 .address {
   text-decoration: none;
-  font-family: "Roboto";
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -226,9 +223,6 @@ body {
   color: var(--accent-text-color);
 }
 .contact-links {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
@@ -262,6 +256,7 @@ body {
 /*________СПИСОК САЙТІВ ФІЛЬТР________*/
 
 .items {
+  background-color: var(--forth-bg-color);
 }
 .list-items {
 }
@@ -269,19 +264,15 @@ body {
 .link {
   text-decoration: none;
 }
-
-.items-title {
-  font-family: inherit;
-  font-weight: 700;
+/* items-title */
+.project-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
-  text-decoration: none;
 }
-.items-text {
-  font-family: inherit;
-  font-weight: 400;
+/* items-text */
+.project-text {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
