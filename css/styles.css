@@ -132,9 +132,9 @@ body {
 .visually-hidden {
 }
 .feature {
-  background-color: var(--forth-bg-color);
 }
 .features-titles {
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -142,6 +142,7 @@ body {
 .features-text {
   line-height: 1.71;
   letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
 
 /* ________ЧИМ ЗАЙМАЄМОСЬ________*/
@@ -218,10 +219,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--third-text-color);
 }
-.address:hover,
-.address:focus {
-  color: var(--accent-text-color);
-}
+
 .contact-links {
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -255,8 +253,7 @@ body {
 
 /*________СПИСОК САЙТІВ ФІЛЬТР________*/
 
-.items {
-  background-color: var(--forth-bg-color);
+.portfolio {
 }
 .list-items {
 }
